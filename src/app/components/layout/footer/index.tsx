@@ -11,13 +11,14 @@ const Footer = () => {
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md pt-10 pb-5 px-0 sm:px-6 lg:px-8">
         <div className="grid grid-cols-12 gap-4">
           <div className="md:col-span-4 col-span-12 flex items-center px-4 sm:px-0">
-            <Link href="/" className="mb-6 inline-block max-w-40">
+            <Link href="/" className="mb-6 max-w-40 flex items-center gap-x-2">
               <Image
-                src="/images/logo/logo-white.svg"
+                src="/images/logo/logo.png"
                 alt="logo"
-                width={156}
-                height={38}
+                width={50}
+                height={50}
               />
+              <h4 className="font-bold text-xl text-white">Epaphras</h4>
             </Link>
           </div>
           <div className="md:col-span-8 col-span-12 grid grid-cols-12 gap-4 px-4 sm:px-0">
@@ -90,40 +91,9 @@ const Footer = () => {
                     Contact Support
                   </Link>
                 </li>
-                <li>
-                  <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Properties
-                  </Link>
-                </li>
               </ul>
             </div>
-            <div className="w-full lg:col-span-4 col-span-12">
-              <h4 className="mb-4 text-lg text-white dark:text-white">
-                Popular Searches
-              </h4>
-              <ul>
-                <li onClick={() => updateFilter('category', 'apartment')}>
-                  <Link href="/properties/properties-list?category=apartment" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Apartment for Rent
-                  </Link>
-                </li>
-                <li onClick={() => updateFilter('category', 'house')}>
-                  <Link href="/properties/properties-list?category=house" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    House for Buy
-                  </Link>
-                </li>
-                <li onClick={() => updateFilter('category', 'office')}>
-                  <Link href="/properties/properties-list?category=office" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Offices for Buy
-                  </Link>
-                </li>
-                <li onClick={() => updateFilter('category', 'shop')}>
-                  <Link href="/properties/properties-list?category=shop" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Shop for Rent
-                  </Link>
-                </li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>
@@ -133,27 +103,15 @@ const Footer = () => {
             <div className="flex lg:flex-nowrap flex-wrap lg:flex-row lg:gap-11 gap-4 text-base sm:text-lg md:text-xl text-black text-opacity-50">
               <p className="text-white">
                 Phone :
-                <Link href="#" className="text-gray hover:text-white"> +(690) 2560 0020</Link>
+                <Link href="#" className="text-gray hover:text-white"> +(233) 2560 0020</Link>
               </p>
               <p className="text-white">
                 Email :
-                <Link href="#" className="text-gray hover:text-white"> real@property.com</Link>
+                <Link href="#" className="text-gray hover:text-white"> real@epaphras.com</Link>
               </p>
             </div>
           </div>
-          <div className="max-w-lg w-full">
-            <div className="flex justify-center lg:justify-end">
-              <p className="items-center flex mr-3 text-base sm:text-lg md:text-xl font-bold text-white">Newsletter</p>
-              <input
-                type="text"
-                className="py-3 dark:bg-darkmode dark:text-gray !rounded-r-none border border-transparent dark:border-dark_border dark:focus:border-primary focus-visible:outline-none rounded-l-lg px-3 w-full sm:w-auto "
-                placeholder="Email address"
-              />
-              <button className="py-2 px-5 sm:px-9 bg-primary text-base text-white rounded-r-lg hover:bg-blue-700">
-                Subscribe
-              </button>
-            </div>
-          </div>
+
         </div>
       </div>
     </footer>

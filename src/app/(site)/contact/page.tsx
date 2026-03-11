@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import HeroSub from "@/app/components/shared/hero-sub";
 import ContactInfo from "@/app/components/contact/contact-info";
 import ContactForm from "@/app/components/contact/form";
-import Location from "@/app/components/contact/office-location";
+
 export const metadata: Metadata = {
-  title: "Contact | Property-pro",
+  title: "Contact",
 };
 
 const page = () => {
@@ -23,7 +23,6 @@ const page = () => {
       />
       <ContactInfo />
       <ContactForm />
-      <Location />
     </>
   );
 };

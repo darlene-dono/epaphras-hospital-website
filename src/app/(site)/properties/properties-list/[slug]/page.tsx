@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from "next/navigation";
 import Image from 'next/image';
 import CompanyInfo from '@/app/components/home/info';
-import Availability from '@/app/components/property-details/availability';
 import Tabbar from '@/app/components/property-details/tabbar';
 import TextSection from '@/app/components/property-details/text-section';
 import DiscoverProperties from '@/app/components/home/property-option';
@@ -31,10 +30,6 @@ export default function Details() {
 
   const item = properties.find((item) => item.slug === slug);
 
-  const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/property-list", text: "Property Details" },
-  ];
   return (
     <div>
       <section className="bg-cover pt-36 pb-20 relative bg-gradient-to-b from-white from-10% dark:from-darkmode to-herobg to-90% dark:to-darklight overflow-x-hidden" >
@@ -59,7 +54,6 @@ export default function Details() {
       <TextSection />
       <CompanyInfo />
       <Tabbar />
-      <Availability />
       <DiscoverProperties />
     </div>
   );

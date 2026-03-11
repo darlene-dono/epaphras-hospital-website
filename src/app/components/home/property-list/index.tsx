@@ -26,7 +26,7 @@ const Listing = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {properties.slice(0, 6).map((property, index) => (
                         <div key={property.id} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
-                            <PropertyCard property={property} />
+                            <PropertyCard item={property} />
                         </div>
                     ))}
                 </div>

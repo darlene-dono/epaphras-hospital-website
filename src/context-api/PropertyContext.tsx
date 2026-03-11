@@ -1,7 +1,7 @@
 'use client';
 
 import { Filters } from '@/app/types/property/filtertypes';
-import { propertyData } from '@/app/types/property/propertyData';
+import { itemData } from '@/app/types/property/propertyData';
 import React, {
   createContext,
   useState,
@@ -12,8 +12,8 @@ import React, {
 } from 'react';
 
 interface PropertyContextType {
-  properties: propertyData[];
-  setProperties: Dispatch<SetStateAction<propertyData[]>>;
+  properties: itemData[];
+  setProperties: Dispatch<SetStateAction<itemData[]>>;
   filters: Filters;
   setFilters: any;
   updateFilter: (key: keyof Filters, value: string) => void;
@@ -22,8 +22,8 @@ interface PropertyContextType {
 export const PropertyContext = createContext<PropertyContextType | undefined>(undefined);
 
 export const AppContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [allProperties, setAllProperties] = useState<propertyData[]>([]);
-  const [properties, setProperties] = useState<propertyData[]>([]);
+  const [allProperties, setAllProperties] = useState<itemData[]>([]);
+  const [properties, setProperties] = useState<itemData[]>([]);
   const [filters, setFilters] = useState<Filters>({
     keyword: '',
     location: '',
@@ -40,8 +40,8 @@ export const AppContextProvider: React.FC<{ children: ReactNode }> = ({ children
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const res = await fetch('/api/propertydata');
-        const data: propertyData[] = await res.json();
+        const res = await fetch('/api/itemData');
+        const data: itemData[] = await res.json();
         setAllProperties(data);
         setProperties(data); // set initially unfiltered list
       } catch (error) {
@@ -56,13 +56,7 @@ export const AppContextProvider: React.FC<{ children: ReactNode }> = ({ children
   useEffect(() => {
     const filteredProperties = allProperties.filter((property) => {
       return (
-        (!filters.keyword || property.property_title.toLowerCase().includes(filters.keyword.toLowerCase())) &&
-        (!filters.location || property.location.toLowerCase() === filters.location.toLowerCase()) &&
-        (!filters.tag || property.tag.toLowerCase() === filters.tag.toLowerCase()) &&
-        (!filters.status || property.status === filters.status) &&
-        (!filters.category || property.category.toLowerCase() === filters.category.toLowerCase()) &&
-        (!filters.beds || property.beds === Number(filters.beds)) &&
-        (!filters.garages || property.garages === Number(filters.garages))
+        (!filters.keyword || property.item_title.toLowerCase().includes(filters.keyword.toLowerCase()))
       );
     });
 

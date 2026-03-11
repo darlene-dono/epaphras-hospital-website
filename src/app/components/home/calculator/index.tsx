@@ -26,7 +26,7 @@ export default function Calculator() {
             className="text-4xl mb-4 font-bold text-midnight_text dark:text-white"
             data-aos="fade-left"
           >
-            Save Your Money
+            Add a Title
           </h2>
           <p className="text-xl text-gray mb-12" data-aos="fade-left">
             Sometimes by accident, sometimes chunks as necessary making this the
@@ -68,71 +68,19 @@ export default function Calculator() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up">
-            <Link
-              href="/properties/properties-list"
-              className="text-xl bg-primary py-3 px-8 text-white rounded-lg me-3 mb-2 border border-primary hover:bg-blue-700"
-            >
-              Buy House
-            </Link>
-            <Link
-              href="/properties/properties-list"
-              className="text-xl hover:bg-primary hover:text-white py-3 px-8 text-primary border border-primary rounded-lg me-3 mb-2"
-            >
-              Sell House
-            </Link>
-          </div>
         </div>
         <div className="lg:w-auto w-full" data-aos="fade-right">
           <div className="bg-primary rounded-t-lg p-16 w-full">
             <p className="text-4xl text-white mb-6 font-bold flex items-center justify-center">
-              Savings Calculator
+              A fancy title here
             </p>
             <div className="flex justify-center">
-              <div className="flex p-3 border-4 rounded-full bg-transparent border-cyan items-center justify-center">
-                <button
-                  className={`px-6 py-2 text-base focus:outline-none ${
-                    activeTab === "buy"
-                      ? "text-white bg-cyan rounded-full"
-                      : "text-white transition duration-300 rounded-full"
-                  }`}
-                  onClick={() => handleTabChange("buy")}
-                >
-                  Buy
-                </button>
-                <button
-                  className={`px-6 py-2 text-base focus:outline-none ${
-                    activeTab === "sell"
-                      ? "text-white bg-cyan rounded-full"
-                      : "text-white transition duration-300 rounded-full"
-                  }`}
-                  onClick={() => handleTabChange("sell")}
-                >
-                  Sell
-                </button>
-              </div>
+              
             </div>
-            <div className="items-center justify-center mt-12">
-              <p className="text-white flex items-center justify-center font-bold">
-                SAVINGS
-              </p>
-              <p className="mb-6 text-white flex items-center justify-center font-bold text-[50px] leading-[1.2]">
-                ${price}
-              </p>
-              <input
-                type="range"
-                min="10000"
-                max="4000000"
-                step=""
-                value={price}
-                onChange={handlePriceChange}
-                className="w-full h-2 bg-blue-800 rounded-lg appearance-none cursor-pointer "
-              />
+            <div className="items-center justify-center mt-12 text-white text-lg">
+             Put some nice description here...........
             </div>
-            <div className="flex justify-between text-sm text-white mt-2 font-bold">
-              <p>$10K</p>
-              <p>$400K</p>
-            </div>
+            
           </div>
           <div className="p-4 bg-blue-700 text-white text-xl rounded-b-lg">
             <p className="text-center mb-1 opacity-70">Have Questions?</p>

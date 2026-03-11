@@ -34,22 +34,20 @@ export default function History() {
         >
           <div className="bg-white dark:bg-darklight dark:text-white p-4 max-w-60 border-4 border-primary rounded-lg">
             <p className="mb-16 text-3xl text-midnight_text dark:text-white font-bold">
-              BEST REAL ESTATE COMPANY
+              BEST CERTIFIED HOSPITAL
             </p>
             <div className="flex justify-between">
               <div>
                 <p className="text-black text-opacity-60 dark:text-gray">
                   Years Experience
                 </p>
-                <p className="text-[65px] leading-[1.2] -mt-1 text-midnight_text dark:text-white font-bold mb-2">
-                  33
-                </p>
+                <p className="text-[65px] leading-[1.2] -mt-1 text-midnight_text dark:text-white font-bold mb-2">5+</p>
               </div>
               <div>
                 <Image
-                  src="/images/history/logo.svg"
+                  src="/images/logo/logo.png"
                   alt="company"
-                  width={93}
+                  width={95}
                   height={130}
                 />
               </div>
