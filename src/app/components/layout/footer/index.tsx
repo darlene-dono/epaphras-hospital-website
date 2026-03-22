@@ -18,8 +18,8 @@ const Footer = () => {
                 width={50}
                 height={50}
               />
-              <h4 className="font-bold text-md text-white">Epaphras Hospital</h4>
             </Link>
+            <h4 className="font-bold text-md text-white">Epaphras Hospital</h4>
           </div>
           <div className="md:col-span-8 col-span-12 grid grid-cols-12 gap-4 px-4 sm:px-0">
             <div className="w-full lg:col-span-4 col-span-12">
@@ -27,7 +27,9 @@ const Footer = () => {
                 Address
               </h4>
               <p className="mb-6 text-gray text-base">
-                Bible School Junction, Afrancho Bronkong - Kumasi. GPS: AF-0350 -5003
+                Bible School Junction, Afrancho Bronkong - Kumasi.
+                <br />
+                GPS: AF-0350 -5003
               </p>
               <div className="flex items-center gap-2">
                 <a
@@ -61,7 +63,6 @@ const Footer = () => {
                   >
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                   </svg>
-
                 </a>
                 <a
                   aria-label="social link"
@@ -87,13 +88,15 @@ const Footer = () => {
               </h4>
               <ul>
                 <li>
-                  <Link href="/contact" className="mb-3 inline-block text-base text-gray hover:text-white">
+                  <Link
+                    href="/contact"
+                    className="mb-3 inline-block text-base text-gray hover:text-white"
+                  >
                     Contact Us
                   </Link>
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
@@ -103,15 +106,24 @@ const Footer = () => {
             <div className="flex lg:flex-nowrap flex-wrap lg:flex-row lg:gap-11 gap-4 text-base sm:text-lg md:text-xl text-black text-opacity-50">
               <p className="text-white text-sm">
                 Phone :
-                <Link href="https://wa.me/233247007817" target='_blank' className="text-gray hover:text-white"> +233 24 700 7817</Link>
+                <Link
+                  href="https://wa.me/233247007817"
+                  target="_blank"
+                  className="text-gray hover:text-white"
+                >
+                  {" "}
+                  +233 24 700 7817
+                </Link>
               </p>
               <p className="text-white text-sm">
                 Email :
-                <Link href="#" className="text-gray hover:text-white"> info@epaphrashospital.com</Link>
+                <Link href="#" className="text-gray hover:text-white">
+                  {" "}
+                  info@epaphrashospital.com
+                </Link>
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
