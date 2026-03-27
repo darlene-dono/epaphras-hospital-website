@@ -18,7 +18,9 @@ const Footer = () => {
                 width={50}
                 height={50}
               />
-              <h4 className="font-bold text-xl text-white">Epaphras</h4>
+              <h4 className="font-bold text-md text-white">
+                Epaphras Hospital
+              </h4>
             </Link>
           </div>
           <div className="md:col-span-8 col-span-12 grid grid-cols-12 gap-4 px-4 sm:px-0">
@@ -27,7 +29,9 @@ const Footer = () => {
                 Address
               </h4>
               <p className="mb-6 text-gray text-base">
-                Property Real estate 4263 Wilkinson Street Tennessee
+                Bible School Junction, Afrancho Bronkong - Kumasi.
+                <br />
+                GPS: AF-0350 -5003
               </p>
               <div className="flex items-center gap-2">
                 <a
@@ -61,7 +65,6 @@ const Footer = () => {
                   >
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                   </svg>
-
                 </a>
                 <a
                   aria-label="social link"
@@ -87,13 +90,15 @@ const Footer = () => {
               </h4>
               <ul>
                 <li>
-                  <Link href="/contact" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Contact Support
+                  <Link
+                    href="/contact"
+                    className="mb-3 inline-block text-base text-gray hover:text-white"
+                  >
+                    Contact Us
                   </Link>
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
@@ -101,17 +106,26 @@ const Footer = () => {
         <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="lg:max-w-45 max-w-full text-center lg:text-left mb-4 lg:mb-0">
             <div className="flex lg:flex-nowrap flex-wrap lg:flex-row lg:gap-11 gap-4 text-base sm:text-lg md:text-xl text-black text-opacity-50">
-              <p className="text-white">
+              <p className="text-white text-sm">
                 Phone :
-                <Link href="#" className="text-gray hover:text-white"> +(233) 2560 0020</Link>
+                <Link
+                  href="https://wa.me/233247007817"
+                  target="_blank"
+                  className="text-gray hover:text-white"
+                >
+                  {" "}
+                  +233 24 700 7817
+                </Link>
               </p>
-              <p className="text-white">
+              <p className="text-white text-sm">
                 Email :
-                <Link href="#" className="text-gray hover:text-white"> real@epaphras.com</Link>
+                <Link href="#" className="text-gray hover:text-white">
+                  {" "}
+                  info@epaphrashospital.com
+                </Link>
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </footer>

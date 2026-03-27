@@ -12,14 +12,14 @@ export default function History() {
           data-aos="fade-right"
         >
           <p className="text-4xl text-midnight_text dark:text-white mb-8 font-bold">
-            Property History <br />
-            How we became number one
+            Who we are
           </p>
           <p className="mb-8 pb-2 text-gray">
-            Letraset sheets containing Lorem Ipsum passages and more recently
-            with desktop publishing. Various versions have evolved over the
-            years, sometimes by accident, sometimes as necessary making release
-            of Letraset sheets containing Lorem Ipsum passages.
+            Epaphras Hospital is a modern, well-equipped healthcare facility
+            located in Afrancho-Bronkong in the Ashanti Region. Since 2017, we
+            have been providing reliable, patient-centered medical services to
+            individuals and families, serving an average of 50 patients daily
+            with professionalism and care.
           </p>
           <Link
             href="/properties/properties-list"
@@ -31,17 +31,20 @@ export default function History() {
         <div
           className="hidden lg:block 5xl:col-span-4 5xl:ml-11 col-span-1 lg:col-span-5"
           data-aos="fade-left"
+          
         >
           <div className="bg-white dark:bg-darklight dark:text-white p-4 max-w-60 border-4 border-primary rounded-lg">
             <p className="mb-16 text-3xl text-midnight_text dark:text-white font-bold">
-              BEST CERTIFIED HOSPITAL
+              CERTIFIED HOSPITAL
             </p>
             <div className="flex justify-between">
               <div>
                 <p className="text-black text-opacity-60 dark:text-gray">
                   Years Experience
                 </p>
-                <p className="text-[65px] leading-[1.2] -mt-1 text-midnight_text dark:text-white font-bold mb-2">5+</p>
+                <p className="text-[65px] leading-[1.2] -mt-1 text-midnight_text dark:text-white font-bold mb-2">
+                  12+
+                </p>
               </div>
               <div>
                 <Image
