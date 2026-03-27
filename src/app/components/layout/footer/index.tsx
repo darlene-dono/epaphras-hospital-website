@@ -18,8 +18,10 @@ const Footer = () => {
                 width={50}
                 height={50}
               />
+              <h4 className="font-bold text-md text-white">
+                Epaphras Hospital
+              </h4>
             </Link>
-            <h4 className="font-bold text-md text-white">Epaphras Hospital</h4>
           </div>
           <div className="md:col-span-8 col-span-12 grid grid-cols-12 gap-4 px-4 sm:px-0">
             <div className="w-full lg:col-span-4 col-span-12">

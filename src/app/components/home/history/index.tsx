@@ -31,6 +31,7 @@ export default function History() {
         <div
           className="hidden lg:block 5xl:col-span-4 5xl:ml-11 col-span-1 lg:col-span-5"
           data-aos="fade-left"
+          
         >
           <div className="bg-white dark:bg-darklight dark:text-white p-4 max-w-60 border-4 border-primary rounded-lg">
             <p className="mb-16 text-3xl text-midnight_text dark:text-white font-bold">
