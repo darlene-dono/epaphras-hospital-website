@@ -95,7 +95,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4 py-6">
         <div className="flex items-center gap-x-2">
           <Logo />
-          <h3 className="font-bold text-1xl text-darkgray">Epaphras Hospital</h3>
+          <h3 className="font-bold text-1xl text-darkgray"><span className="text-red">Epa</span><span className="text-primary">phras</span> Hospital</h3>
         </div>
         <nav className="hidden lg:flex flex-grow items-center justify-center space-x-6">
           {data.map((item: any, index: any) => (

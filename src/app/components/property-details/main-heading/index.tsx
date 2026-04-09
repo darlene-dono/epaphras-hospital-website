@@ -11,7 +11,7 @@ const MainHeading: React.FC<MainHeadingProps> = ({ title }) => {
             <div className='lg:max-w-screen-xl max-w-screen-md flex justify-center items-center mx-auto'>
                 <div className='px-4 max-w-43.75'>
                     <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold mb-4 sm:mb-6 md:mb-8' data-aos="fade-up">
-                        Welcome to KD-9 District {title}
+                        Welcome to <span className="text-red">Epa</span><span className="text-primary">phras</span> Hospital {title}
                     </p>
                 </div>
             </div>

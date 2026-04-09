@@ -19,7 +19,7 @@ const Footer = () => {
                 height={50}
               />
               <h4 className="font-bold text-md text-white">
-                Epaphras Hospital
+                <span className="text-red">Epa</span><span className="text-primary">phras</span> Hospital
               </h4>
             </Link>
           </div>
